@@ -19,6 +19,7 @@
 }
 
 .app__navbar-logolink_logo img {
+  object-fit: contain;
   width: 147px;
   height: 67px;
   background: var(--color-black);
@@ -58,6 +59,7 @@
 }
 
 .app__navbar-search img {
+  object-fit: contain;
   width: 32px;
   height: 32px;
   margin-left: 1rem;

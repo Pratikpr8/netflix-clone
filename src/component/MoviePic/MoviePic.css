@@ -1,0 +1,145 @@
+.app__moviepic {
+  position: relative;
+}
+
+.app__moviepic img {
+  max-width: 100%;
+  width: 100%;
+  display: block;
+  object-fit: contain;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.app__moviepic-content {
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  padding: 10px 20px;
+  width: 650px;
+  /* height: 420px; */
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  position: absolute;
+  top: 100px;
+  left: 50px;
+}
+
+.movie-title {
+  font-weight: 800;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 40px;
+  margin-bottom: 1rem;
+  line-height: 60px;
+}
+
+.movie-info {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 26px;
+  margin-bottom: 1rem;
+  word-break: keep-all;
+  word-spacing: 0.05em;
+}
+
+.button-play {
+  background: var(--color-white);
+  border-radius: 4px;
+  margin-right: 1rem;
+  text-transform: capitalize;
+  padding: 8px 30px;
+}
+.button-play:hover {
+  cursor: pointer;
+  box-shadow: 0 0 5px 0 var(--color-white);
+}
+
+.button-moreinfo {
+  background: rgba(255, 255, 255, 0.3);
+  color: var(--color-white);
+  border-radius: 4px;
+  text-transform: capitalize;
+  padding: 8px 30px;
+}
+
+.button-moreinfo:hover {
+  cursor: pointer;
+  box-shadow: 0 0 5px 0 var(--color-white);
+}
+
+.mr-1 {
+  margin: 0.5rem;
+}
+
+.app__moviepic-movierow {
+  position: absolute;
+  top: 70%;
+}
+
+@media screen and (max-width: 2000px) {
+  .app__moviepic-content {
+    padding: 20px 30px;
+    width: 750px;
+    /* height: auto; */
+  }
+
+  .movie-title {
+    font-size: 60px;
+    margin-bottom: 2rem;
+    line-height: 68px;
+  }
+
+  .movie-info {
+    font-size: 25px;
+    line-height: 32px;
+    word-spacing: 0.06em;
+    margin-bottom: 2rem;
+  }
+
+  .button-play,
+  .button-moreinfo {
+    padding: 10px 32px;
+    font-size: 22px;
+  }
+
+  button svg {
+    font-size: 25px;
+  }
+}
+
+@media screen and (max-width: 1150px) {
+  .app__moviepic-content {
+    padding: 5px 15px;
+    width: 550px;
+    /* height: 320px; */
+  }
+
+  .movie-title {
+    font-size: 35px;
+    margin-bottom: 1rem;
+    line-height: 50px;
+  }
+
+  .movie-info {
+    font-size: 18px;
+    line-height: 22px;
+    word-spacing: 0.05em;
+    margin-bottom: 1rem;
+  }
+
+  .button-play,
+  .button-moreinfo {
+    padding: 5px 20px;
+    font-size: 18px;
+  }
+
+  button svg {
+    font-size: 18px;
+  }
+}
+
+/* @media screen and (max-width: ) {
+} */

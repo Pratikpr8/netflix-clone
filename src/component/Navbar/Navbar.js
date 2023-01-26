@@ -9,8 +9,12 @@ import { AiFillCaretDown } from "react-icons/ai";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { GiCrossMark } from "react-icons/gi";
 
-export default function Navbar() {
+import { NetflixContext } from "../../App";
+
+export default function Navbar({ selectedUser }) {
   const [toggleMenu, setToggleMenu] = React.useState(false);
+
+  const { onHandleUserSelect } = React.useContext(NetflixContext);
 
   return (
     <>
@@ -46,8 +50,12 @@ export default function Navbar() {
           <p className="p__opensans">CHILD</p>
           <AiOutlineGift color="#FFF" fontSize={27} />
           <IoMdNotifications color="#FFF" fontSize={27} />
-          <img src={images.account} alt="account pic" />
-          <AiFillCaretDown color="#FFF" fontSize={25} />
+          <img src={selectedUser.img} alt="account pic" />
+          <AiFillCaretDown
+            color="#FFF"
+            fontSize={25}
+            onClick={() => onHandleUserSelect(undefined)}
+          />
         </div>
 
         <div className="app__navbar-smallscreen">
@@ -98,11 +106,15 @@ export default function Navbar() {
         <BsSearch color="#FFF" fontSize={18} />
         <div>
           <img
-            src={images.account}
+            src={selectedUser.img}
             alt="account pic"
             style={{ marginRight: "0.2em" }}
           />
-          <AiFillCaretDown color="#FFF" fontSize={20} />
+          <AiFillCaretDown
+            color="#FFF"
+            fontSize={20}
+            onClick={() => onHandleUserSelect(undefined)}
+          />
         </div>
       </div>
     </>
