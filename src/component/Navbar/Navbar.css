@@ -70,6 +70,10 @@
 }
 
 .app__navbar-smallscreen svg:first-child {
+  margin: 0 0.5rem;
+}
+
+.app__navbar-smallscreen svg:hover {
   cursor: pointer;
 }
 
@@ -88,7 +92,7 @@
   position: absolute;
   cursor: pointer;
   top: 20px;
-  right: 20px;
+  right: 25px;
 }
 
 .app__navbar-smallscreen_links {
@@ -107,13 +111,55 @@
   color: var(--color-gray);
 }
 
-.app__navbar-smallscreen_search {
+/* .app__navbar-smallscreen_search {
   display: none;
-}
+} */
 
-.app__navbar-smallscreen_search img {
+/* .app__navbar-smallscreen_search img {
   width: 22px;
   height: 22px;
+} */
+
+.app__navbar-logolink_dropdown {
+  position: relative;
+  display: none;
+  margin-right: 1rem;
+}
+
+.app__navbar-logolink_dropdown p:first-child:hover {
+  cursor: pointer;
+  color: var(--color-gray);
+  transition: 0.5s ease;
+}
+.app__navbar-logolink_dropdown p:first-child svg {
+  margin-left: 0.25rem;
+}
+
+.app__navbar-logolink_dropdown-links {
+  margin-top: 0.8rem;
+  position: absolute;
+  left: 0;
+  top: 60%;
+  z-index: 10;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.9);
+  list-style: none;
+  padding: 8px;
+}
+
+.app__navbar-logolink_dropdown-links li {
+  margin-bottom: 10px;
+}
+
+.app__navbar-logolink_dropdown-links li:hover {
+  cursor: pointer;
+}
+
+.app__navbar-logolink_dropdown-links li img {
+  height: 28px;
+  width: 28px;
+  object-fit: contain;
+  margin-right: 0.4rem;
 }
 
 @media screen and (max-width: 2000px) {
@@ -126,9 +172,14 @@
   .app__navbar-logolink_links {
     display: none;
   }
-
+  .app__navbar-logolink_dropdown {
+    display: flex;
+  }
   .app__navbar-smallscreen {
     display: flex;
+  }
+  .app__navbar-search {
+    display: none;
   }
 }
 
@@ -139,7 +190,7 @@
   }
 
   .app__navbar-logolink_logo img {
-    width: 130px;
+    width: 100px;
     height: 55px;
   }
 
@@ -152,7 +203,7 @@
     display: none;
   }
 
-  .app__navbar-smallscreen_search {
+  /* .app__navbar-smallscreen_search {
     width: 100%;
     background: var(--color-black);
     display: flex;
@@ -165,5 +216,5 @@
   .app__navbar-smallscreen_search svg,
   .app__navbar-smallscreen_search p {
     cursor: pointer;
-  }
+  } */
 }

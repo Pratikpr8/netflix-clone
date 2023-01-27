@@ -12,6 +12,7 @@ export default function MovieRow({
   fetchURL,
   isLargeRow,
   isInsideHome,
+  mobileView,
 }) {
   const [movies, setMovies] = useState([]);
   const [showArrowLeft, setShowArrowLeft] = useState(false);
@@ -32,7 +33,9 @@ export default function MovieRow({
 
   return (
     <div
-      className={`app__movierow ${isInsideHome && "app__movierow-homepage"}`}
+      className={`app__movierow ${isInsideHome && "app__movierow-homepage"} ${
+        mobileView && "display__toprow"
+      }`}
     >
       <h2 className="headtext__opensans row__title">{title}</h2>
 

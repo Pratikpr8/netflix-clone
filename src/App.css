@@ -36,6 +36,13 @@
   transition: 0.5 ease;
 }
 
+@media screen and (max-width: 1600px) {
+  .p__opensans {
+    font-size: 16px;
+    line-height: 22px;
+  }
+}
+
 @media screen and (max-width: 1150px) {
   .p__opensans {
     font-size: 16px;

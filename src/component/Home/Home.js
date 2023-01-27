@@ -11,6 +11,11 @@ export default function Home({ selectedUser }) {
     <>
       <Navbar selectedUser={selectedUser} />
       <MoviePic fetchURL={request.fetchPopularMov} />
+      <MovieRow
+        title="Popular on Netflix"
+        fetchURL={request.fetchPopularMov}
+        mobileView
+      />
       <MovieRow title="What's trending" fetchURL={request.fetchTrending} />
       <MovieRow title="Top Rated" fetchURL={request.fetchTopRated} isLargeRow />
       <MovieRow title="Trending Today" fetchURL={request.fetchTrendingTod} />

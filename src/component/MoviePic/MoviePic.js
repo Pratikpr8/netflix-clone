@@ -14,7 +14,7 @@ export default function MoviePic({ fetchURL }) {
     const fetchData = async () => {
       const res = await axios.get(fetchURL);
       const data = res.data.results;
-      console.log(data);
+      // console.log(data);
       const randomObj = data[Math.floor(Math.random() * data.length)];
       setMovie(randomObj);
       // console.log(movie);
