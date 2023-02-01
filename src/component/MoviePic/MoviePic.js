@@ -25,6 +25,7 @@ export default function MoviePic({ fetchURL }) {
   return (
     <>
       <div className="app__moviepic">
+        <div className="app__moviepic-gradient" />
         <img src={`${basicImgUrlPath}${movie.backdrop_path}`} alt="home pic" />
         <div className="app__moviepic-content">
           <div className="app__moviepic-content_info">

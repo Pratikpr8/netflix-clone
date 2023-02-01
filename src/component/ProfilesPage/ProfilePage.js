@@ -1,4 +1,4 @@
-import React,{useContext} from "react";
+import React, { useContext } from "react";
 import { MdOutlineAddCircle } from "react-icons/md";
 import { images, data } from "../../constants";
 
@@ -6,23 +6,18 @@ import { NetflixContext } from "../../App";
 
 import "./ProfilePage.css";
 
-const UserCard = ({ user: { name, img ,id} }) => {
-  const {onHandleUserSelect} = useContext(NetflixContext)
+const UserCard = ({ user: { name, img, id } }) => {
+  const { onHandleUserSelect } = useContext(NetflixContext);
 
   return (
     <div className="app__profiles-users_list">
-      <img 
-        src={img}
-        alt="user 1" 
-        onClick={()=>onHandleUserSelect(id)}
-      />
+      <img src={img} alt="user 1" onClick={() => onHandleUserSelect(id)} />
       <p className="p__opensans">{name}</p>
     </div>
   );
 };
 
 export default function ProfilePage() {
-
   return (
     <div className="app__profiles">
       <div className="app__profile-netflix-logo">

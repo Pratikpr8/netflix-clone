@@ -3,6 +3,7 @@ import "./App.css";
 import { ProfilePage } from "./component";
 import { data } from "./constants";
 import { Home } from "./component";
+
 export const NetflixContext = React.createContext();
 
 function App() {

@@ -17,7 +17,7 @@ export default function Navbar({ selectedUser }) {
   const [toggleBrowse, setToggleBrowse] = React.useState(false);
 
   const { onHandleUserSelect } = React.useContext(NetflixContext);
-  console.log(toggleBrowse);
+  // console.log(toggleBrowse);
 
   return (
     <>
