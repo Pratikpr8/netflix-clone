@@ -4,5 +4,5 @@ figma design link: https://www.figma.com/file/mrrjPVrkXlXVrtNH2Lohpy/Netflix-Clo
 
 github hosted site : https://pratikpr8.github.io/netflix-clone/
 
-firebaes hosted site:https://netflix-clone-e96bd.web.app/
+firebase hosted site:https://netflix-clone-e96bd.web.app/
 
