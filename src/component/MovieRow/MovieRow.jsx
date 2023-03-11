@@ -53,6 +53,7 @@ export default function MovieRow({
                   isLargeRow ? movie.poster_path : movie.backdrop_path
                 }`}
                 alt="movie img"
+                loading="lazy"
               />
             );
           })}
